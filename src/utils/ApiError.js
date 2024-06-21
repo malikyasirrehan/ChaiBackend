@@ -6,9 +6,6 @@ class ApiError extends Error{
         stack=""
 
 
-        
-
-
 ){
 
     super(message)
@@ -28,4 +25,4 @@ class ApiError extends Error{
 
 
 }
-export{ApiError}
+export{ ApiError }

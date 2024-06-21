@@ -3,15 +3,17 @@ const asycHandler = (requestHandler) => {
 
         Promise.resolve(requestHandler(req, res, next)).
             catch((err) => next(err))
+            console.log(err);
     }
 
 }
 
+ 
 export { asycHandler }
 
 
 
-// const asycHandler=(fn)=> async  (req,res,next) => {
+// const asycHandler=(fn)=> { async (req,res,next) => {
 
 //     try{
 //         await fn(req,res,next)
@@ -25,4 +27,5 @@ export { asycHandler }
 //         })
 
 //     }
-// } 
+// }
+// }

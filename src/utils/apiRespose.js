@@ -8,3 +8,5 @@ class ApiRespose{
     }
 
 }
+
+export {ApiRespose}
